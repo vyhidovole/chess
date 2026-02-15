@@ -1,0 +1,77 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0;
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+}
+
+main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+main div img {
+    width: 80%;
+}
+
+/* Простой способ - задаем цвета по строкам */
+main div:nth-child(5n + 1),
+main div:nth-child(5n + 3),
+main div:nth-child(5n + 5) {
+    background-color: burlywood;
+}
+
+main div:nth-child(5n + 2),
+main div:nth-child(5n + 4) {
+    background-color: azure;
+}
+
+main div:nth-child(5n + 6),
+main div:nth-child(5n + 8),
+main div:nth-child(5n + 10) {
+    background-color: azure;
+}
+
+main div:nth-child(5n + 7),
+main div:nth-child(5n + 9) {
+    background-color: burlywood;
+}
+
+main div:nth-child(5n + 11),
+main div:nth-child(5n + 13),
+main div:nth-child(5n + 15) {
+    background-color: burlywood;
+}
+
+main div:nth-child(5n + 12),
+main div:nth-child(5n + 14) {
+    background-color: azure;
+}
+
+main div:nth-child(5n + 16),
+main div:nth-child(5n + 18),
+main div:nth-child(5n + 20) {
+    background-color: azure;
+}
+
+main div:nth-child(5n + 17),
+main div:nth-child(5n + 19) {
+    background-color: burlywood;
+}
+
+main div:nth-child(5n + 21),
+main div:nth-child(5n + 23),
+main div:nth-child(5n + 25) {
+    background-color: burlywood;
+}
+
+main div:nth-child(5n + 22),
+main div:nth-child(5n + 24) {
+    background-color: azure;
+}

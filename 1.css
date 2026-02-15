@@ -1,0 +1,24 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+}
+main div{
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div img{
+    width: 80%;
+}
+
+main div:nth-child(2n){
+    background-color: azure;
+}
